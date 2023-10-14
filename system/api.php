@@ -1,6 +1,6 @@
 <?php
 
-require_once "conexion.php";
+require_once "hospedajes.php";
 
 if(isset($_GET['get_all_hospedajes'])){
 
@@ -24,19 +24,3 @@ if(isset($_GET['get_all_hospedajes'])){
     
 }
 
-class Hospedajes extends Conexion {
-
-    public function getHospedajes()
-    {
-
-        $query = $this->con->prepare("SELECT * FROM hospedajes 
-        ");
-
-        $query->execute([]);
-
-        $hospedajes = $query->fetchAll();
-
-        return $hospedajes;
-    }
-
-}
