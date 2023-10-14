@@ -1,16 +1,27 @@
 <?php
 
-require_once "Conexion.php";
+require_once "conexion.php";
 
 if(isset($_GET['get_all_hospedajes'])){
 
-    $hospedajes = new Hospedajes();
+    try{
 
-    $data = $hospedajes->getHospedajes();
+        $hospedajes = new Hospedajes();
 
-    echo json_encode($data);
+        $data = $hospedajes->getHospedajes();
 
-    return 0;
+        echo json_encode($data);
+
+        return 0;
+
+    }catch(Throwable $e){
+
+
+        echo json_encode(['error' => $e->getMessage()]);
+
+    }
+
+    
 }
 
 class Hospedajes extends Conexion {
