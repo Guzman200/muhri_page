@@ -39,15 +39,35 @@ h6 {
 
 @media (min-width: 540px) {
   .text-main {
-    font-size: 40px !important;
+    font-family: "Raleway", sans-serif;
+    font-size: 48px !important;
+    font-weight: 700;
+  }
+
+  .text-main-p {
+    font-family: "Raleway", sans-serif;
+    opacity: 0.70;
+    color: white !important;
+    margin: 10px 0 20px 0;
+    font-size: 24px;
   }
 }
 
 @media (max-width: 540px) {
   .text-main {
+    font-family: "Raleway", sans-serif;
     font-size: 26px !important;
   }
+
+  .text-main-p {
+    font-family: "Raleway", sans-serif;
+    opacity: 0.70;
+    color: white !important;
+    margin: 10px 0 20px 0;
+    font-size: 24px;
+  }
 }
+
 
 
 
@@ -441,6 +461,7 @@ h6 {
   background-size: cover;
   position: relative;
   padding: 0;
+  font-family: "Raleway", sans-serif;
 }
 
 #hero:before {
@@ -477,7 +498,7 @@ h6 {
 
 #hero h2 {
   color: #eee;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
   font-size: 24px;
 }
 
@@ -537,8 +558,6 @@ h6 {
 
   #hero h2 {
     font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 30px;
   }
 }
 
@@ -761,7 +780,7 @@ section {
 .about-boxes {
   /*background: url("../img/about-boxes-bg.jpg") center top no-repeat fixed; */
   background-size: cover;
-  padding: 60px 0 30px 0;
+  padding: 10px 0 30px 0;
   position: relative;
 }
 
