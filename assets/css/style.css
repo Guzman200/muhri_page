@@ -791,7 +791,7 @@ section {
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgba(255, 255, 255, 0.92);
+  background: #f0f4f8;
   z-index: 9;
 }
 
